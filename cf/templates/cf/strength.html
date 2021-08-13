@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+  <head>
+<style>
+
+ @import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+   table{
+    width:100%;
+    text-align:center;
+}
+
+    th, td {
+border:1px solid black;
+      }
+
+.contact-us {
+  background: #f8f4e5;
+  padding: 50px 100px;
+
+  border-top: 20px solid #f45702;
+
+}
+
+label, input, textarea, select, option {
+  display: block;
+  width: 100%;
+  font-size: 12pt;
+  line-height: 24pt;
+  font-family: "Spartan";
+}
+input {
+  margin-bottom: 24pt;
+}
+input, select {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: #f8f4e5;
+  padding-left: 5px;
+  outline: none;
+}
+input:focus, select:focus {
+  border: 1px solid #6bd4b1;
+}
+
+</style>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+        <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+
+
+  <!-- Template Main CSS File -->
+<link href="{% static 'css/sty.css' %}" rel="stylesheet">
+
+
+      <link rel="shortcut icon" type="use/png" href="use.png" />
+      <title>Discovering Your Personality(Strengths)</title>
+
+ </head>
+<body>
+ <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="{% url 'home' %}">Counselling Firm<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="{% url 'home' %}">Home</a></li>
+<li class="dropdown"><a href="#"><span>Who you are</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{% url 'strength' %}">Strength</a></li>
+              <li><a href="{% url 'weakness' %}">Weakness</a></li>
+
+            </ul>
+          </li>        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+
+    </div>
+  </header><!-- End Header -->
+<div class = "contact-us">
+        <br>
+    <br>
+
+
+<h2>DIRECTIONS</h2>
+<p>
+    <br>
+    Kindly select the most appropriate options that applies to you from number 1 to 20 as seen below. </p>
+
+    <br>
+    <p>
+    <b>If you are not sure of which word "most applies", ask your fiance, spouse or friend, and similarly, think of
+        what your answers would be if you were to fill this during your childhood days. </b>
+</p>
+<br>
+    <br>
+
+<h4>STRENGTHS</h4>
+<br>
+    <br>
+<form>
+  <label for="first">1.&nbsp&nbsp Choose an option:</label>
+  <select id="first" name="first">
+        <option selected="selected" disabled="disabled" >Select an option</option>
+      <option value=0>Animated</option>
+
+    <option value=2>Analytical</option>
+<option value=3>Adaptable</option>
+
+  <option value=1>Adventurous</option>
+  </select>
+  <br>
+  <label for="second">2.&nbsp&nbsp Choose an option:</label>
+  <select id="second" name="second">
+      <option selected="selected" disabled="disabled" >Select an option</option>
+       <option value=1>Persuasive</option>
+    <option value=2>Persistent</option>
+   <option value=0>Playful</option>
+
+<option value=3>Peaceful</option>
+  </select>
+  <br>
+  <label for="third">3.&nbsp&nbsp  Choose an option:</label>
+  <select id="third" name="third">
+    <option value=1>Strong-willed</option>
+
+      <option selected="selected" disabled="disabled" >Select an option</option>
+     <option value=2>Self-sacrificing</option>
+    <option value=0>Sociable</option>
+
+    <option value=3>Submissive</option>
+  </select>
+  <br>
+  <label for="fourth">4.&nbsp&nbsp Choose an option:</label>
+  <select id="fourth" name="fourth">
+    <option value=0>Convincing</option>
+      <option selected="selected" disabled="disabled" >Select an option</option>
+     <option value=1>Competitive</option>
+    <option value=2>Considerate</option>
+    <option value=3>Controlled</option>
+
+  </select>
+  <br>
+  <label for="fifth">5.&nbsp&nbsp  Choose an option:</label>
+  <select id="fifth" name="fifth">
+   <option selected="selected" disabled="disabled" >Select an option</option>
+    <option value=3>Reserved</option>
+ <option value=0>Refereshing</option>
+     <option value=1>Resourceful</option>
+    <option value=2>Respectful</option>
+  </select>
+    <br>
+  <label for="sixth">6.  &nbsp&nbspChoose an option:</label>
+  <select id="sixth" name="sixth">
+      <option selected="selected" disabled="disabled" >Select an option</option>
+<option value=2>Sensitive</option>
+    <option value=0>Spirited</option>
+     <option value=1>Self-reliant</option>
+
+    <option value=3>Satisfied</option>
+
+  </select>  <br>
+  <label for="seventh">7.  &nbsp&nbspChoose an option:</label>
+  <select id="seventh" name="seventh">
+      <option selected="selected" disabled="disabled" >Select an option</option>
+    <option value=0>Promoter</option>
+
+    <option value=3>Patient</option>
+<option value=1>Positive</option>
+    <option value=2>Planner</option>
+  </select>  <br>
+  <label for="eighth">8.&nbsp&nbsp  Choose an option:</label>
+  <select id="eighth" name="eighth">
+      <option selected="selected" disabled="disabled" >Select an option</option>
+ <option value=1>Sure</option>
+    <option value=2>Scheduled</option>
+    <option value=0>Spontaneous</option>
+
+    <option value=3>Shy</option>
+
+  </select>  <br>
+  <label for="ninth">9. &nbsp&nbspChoose an option:</label>
+  <select id="ninth" name="ninth">
+      <option selected="selected" disabled="disabled" >Select an option</option>
+    <option value=0>Optimistic</option>
+     <option value=1>Outspoken</option>
+    <option value=2>Orderly</option>
+    <option value=3>Obliging</option>
+
+  </select>  <br>
+  <label for="tenth">10. Choose an option:</label>
+  <select id="tenth" name="tenth">
+      <option selected="selected" disabled="disabled" >Select an option</option>
+    <option value=0>Funny</option>
+     <option value=1>Forceful</option>
+    <option value=2>Faithful</option>
+    <option value=3>Friendly</option>
+
+  </select>
+<br>
+<label for="11th">11. Choose an option:</label>
+  <select id="11th" name="11th">
+      <option selected="selected" disabled="disabled" >Select an option</option>
+           <option value=1>Daring</option>
+    <option value=2>Detailed</option>
+    <option value=3>Diplomatic</option>
+    <option value=0>Delightful</option>
+
+
+  </select>  <br>
+<label for="12th">12. Choose an option:</label>
+  <select id="12th" name="12th">
+      <option selected="selected" disabled="disabled" >Select an option</option>
+    <option value=0>Cheerful</option>
+     <option value=1>Confident</option>
+    <option value=2>Cultured</option>
+    <option value=3>Consistent</option>
+
+  </select>  <br>
+<label for="13th">13. Choose an option:</label>
+  <select id="13th" name="13th">
+      <option selected="selected" disabled="disabled" >Select an option</option>
+         <option value=2>Idealistic</option>
+    <option value=0>Inspiring</option>
+
+    <option value=3>Inoffensive</option>
+     <option value=1>Independent</option>
+
+
+  </select>  <br>
+<label for="14th">14. Choose an option:</label>
+  <select id="14th" name="14th">
+<option selected="selected" disabled="disabled" >Select an option</option>
+    <option value=2>Deep</option>
+    <option value=3>Dry Humor</option>
+  <option value=0>Demonstrative</option>
+     <option value=1>Decisive</option>
+  </select>  <br>
+<label for="15th">15. Choose an option:</label>
+  <select id="15th" name="15th">
+    <option value=0>Mixes Easily</option>
+         <option value=2>Musical</option>
+     <option value=1>Mover</option>
+<option selected="selected" disabled="disabled" >Select an option</option>
+    <option value=3>Mediator</option>
+
+  </select>  <br>
+<label for="16th">16. Choose an option:</label>
+  <select id="16th" name="16th">
+       <option value=1>Tenacious</option>
+    <option value=0>Talker</option>
+        <option value=3>Tolerant</option>
+    <option value=2>Thoughtful</option>
+
+<option selected="selected" disabled="disabled" >Select an option</option>
+  </select>  <br>
+<label for="17th">17. Choose an option:</label>
+  <select id="17th" name="17th">
+<option selected="selected" disabled="disabled" >Select an option</option>
+    <option value=3>Listener</option>
+ <option value=0>Lively</option>
+     <option value=1>Leader</option>
+    <option value=2>Loyal</option>
+  </select>  <br>
+<label for="18th">18. Choose an option:</label>
+  <select id="18th" name="18th">
+      <option selected="selected" disabled="disabled" >Select an option</option>
+           <option value=1>Chief</option>
+    <option value=2>Chartmaker</option>
+    <option value=0>Cute</option>
+
+    <option value=3>Contented</option>
+
+  </select>  <br>
+<label for="19th">19. Choose an option:</label>
+  <select id="19th" name="19th">
+<option selected="selected" disabled="disabled" >Select an option</option>
+          <option value=2>Perfectionist</option>
+     <option value=1>Productive</option>
+
+    <option value=3>Pleasant</option>
+    <option value=0>Popular</option>
+  </select>  <br>
+
+<label for="20th">20. Choose an option:</label>
+  <select id="20th" name="20th">
+      <option selected="selected" disabled="disabled" >Select an option</option>
+    <option value=0>Bouncy</option>
+     <option value=1>Bold</option>
+    <option value=2>Behaved</option>
+    <option value=3>Balanced</option>
+
+  </select>  <br>
+</form>
+
+<p>Click  <span style="color:red" onclick="fuckna()">this</span> for output</p>
+<table>
+    <tr>
+        <th></th>
+        <th>Type 1</th>
+        <th>Type 2</th>
+        <th>Type 3</th>
+        <th>Type 4</th>
+    </tr>
+    <tr>
+        <td><strong>Scores</strong></td>
+        <td id="result1"></td>
+        <td id="result2"></td>
+        <td id="result3"></td>
+        <td id="result4"></td>
+    </tr>
+</table>
+The column under which you have high score explains more
+    of your type of person in terms of strength.
+<br>
+<br>
+<br>
+
+
+
+
+<div>
+
+
+</div>
+
+    </div>
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Counselling Firm<span>.</span></h3>
+            <p>
+              35 crossway plaza, <br>
+              besides UBA bank off charity road,<br>
+              new oko oba Abule Egba, <br>
+                Lagos, Nigeria. <br><br>
+              <!--<strong>Phone:</strong> +1 5589 55488 55<br>-->
+              <strong>Email:</strong> brownabimbola3@gmail.com<br>
+            </p>
+          </div>
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+
+
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+<script src="{% static 'js/wstr.js' %}"></script>
+
+</body>
+</html>
